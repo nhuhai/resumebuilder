@@ -1,6 +1,7 @@
 $(document).ready(function() {
     var offset = 220;
     var duration = 500;
+    var $remove_button = "<div class='remove-button'><img src='images/delete-icon-md.png' alt='-'></div>";
     $(window).scroll(function() {
         if ($(this).scrollTop() > offset) {
             $('.back-to-top').fadeIn(duration);
@@ -29,7 +30,6 @@ $(document).ready(function() {
         $( "#custom-body" ).append($newdiv);
         
         var $input = "<input class='section-title-text' type='text' placeholder='Section Title'>";
-        var $remove_button = "<a href='#' class='remove-button'>-</a>";
         var $horizontal_line = "<hr>";
 
         $newdiv.append($input + $remove_button + $horizontal_line);
@@ -46,7 +46,6 @@ $(document).ready(function() {
         
         var $text = "<input class='subsection-text' type='text' placeholder='Subsection Title'>";
         var $date = "<input class='date' type='text' placeholder='Date'>";
-        var $remove_button = "<a href='#' class='remove-button'>-</a>";
 
         $newdiv.append($text + $date + $remove_button);
 
@@ -62,7 +61,6 @@ $(document).ready(function() {
         
         var $bullet_symbol = "<span class='bullet-symbol'>&#x2022;</span>";
         var $text = "<input class='bullet-text' type='text' placeholder='Bullet Point'>";
-        var $remove_button = "<a href='#' class='remove-button'>-</a>";
 
         $newdiv.append($bullet_symbol + $text + $remove_button);
 
@@ -77,7 +75,6 @@ $(document).ready(function() {
         $( "#custom-body" ).append($newdiv);
 
         var $input = "<input class='line-text' type='text' placeholder='Detail'>";
-        var $remove_button = "<a href='#' class='remove-button'>-</a>";
 
         $newdiv.append($input + $remove_button);
 
